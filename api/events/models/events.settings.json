@@ -58,6 +58,11 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partners.partners"
     }
   }
 }

@@ -1296,6 +1296,9 @@
                 },
                 "image": {
                   "type": "string"
+                },
+                "partners": {
+                  "type": "component"
                 }
               }
             }
@@ -1351,6 +1354,9 @@
                 },
                 "image": {
                   "type": "string"
+                },
+                "partners": {
+                  "type": "component"
                 }
               }
             }

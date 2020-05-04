@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_partners_partners",
+  "info": {
+    "name": "partners",
+    "icon": "paw"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
