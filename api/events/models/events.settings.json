@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "events"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 500
+    },
+    "url_event": {
+      "type": "string",
+      "required": true
+    },
+    "participants": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "participation",
+      "dominant": true
+    },
+    "speakers": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "events",
+      "dominant": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "time": {
+      "type": "time",
+      "required": true
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.links"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

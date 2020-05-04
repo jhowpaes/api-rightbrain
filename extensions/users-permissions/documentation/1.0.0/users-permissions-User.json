@@ -1244,6 +1244,116 @@
                 }
               }
             }
+          },
+          "participation": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description",
+                "url_event",
+                "date",
+                "time",
+                "image"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "url_event": {
+                  "type": "string"
+                },
+                "participants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "speakers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "date": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "time"
+                },
+                "status": {
+                  "type": "boolean"
+                },
+                "links": {
+                  "type": "component"
+                },
+                "image": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description",
+                "url_event",
+                "date",
+                "time",
+                "image"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "url_event": {
+                  "type": "string"
+                },
+                "participants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "speakers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "date": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "time"
+                },
+                "status": {
+                  "type": "boolean"
+                },
+                "links": {
+                  "type": "component"
+                },
+                "image": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1281,6 +1391,18 @@
           },
           "role": {
             "type": "string"
+          },
+          "participation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

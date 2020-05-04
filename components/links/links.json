@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_links_links",
+  "info": {
+    "name": "Links",
+    "icon": "network-wired"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
